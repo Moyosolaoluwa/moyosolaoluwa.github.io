@@ -24,7 +24,6 @@
       margin: auto;
     }
 
-    /* PROFILE IMAGE */
     .profile-wrapper {
       display: flex;
       justify-content: center;
@@ -39,7 +38,6 @@
       object-fit: cover;
       border: 4px solid #7db4ff;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-      background-color: #0b1638;
     }
 
     .header {
@@ -91,12 +89,10 @@
     .info-box {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       padding: 15px 18px;
       background: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
       margin-bottom: 15px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .info-box span {
@@ -106,22 +102,6 @@
 
     .info-box p {
       color: #eef2ff;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 15px;
-    }
-
-    .skill {
-      background: rgba(125, 180, 255, 0.2);
-      padding: 10px 16px;
-      border-radius: 20px;
-      color: #e0ecff;
-      font-size: 14px;
-      border: 1px solid rgba(125, 180, 255, 0.35);
     }
 
     footer {
@@ -136,76 +116,14 @@
 <body>
   <div class="container">
 
-    <!-- CIRCULAR PROFILE IMAGE -->
     <div class="profile-wrapper">
       <img src="profile.jpg" alt="Profile Picture" class="profile-img">
     </div>
 
     <div class="header">
       <h1>AKIN-ALABI MOYOSOLAOLUWA</h1>
-      <p>Computer Science Student | Aspiring Software Developer</p>
-      <p class="greeting" id="greetingText"></p>
-    </div>
-
-    <div class="card">
-      <h2 class="section-title">About Me</h2>
-      <p class="about-text">
-        Hello! My name is Akin-Alabi Moyosolaoluwa. I am a Computer Science student with
-        a strong interest in software development and problem solving.
-        I am passionate about learning how technology can be applied to solve real-world
-        problems and improve efficiency in different sectors.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="info-box">
-        <span>Institution</span>
-        <p>Bowen University</p>
-      </div>
-
-      <div class="info-box">
-        <span>Course</span>
-        <p>Computer Science</p>
-      </div>
-
-      <div class="info-box">
-        <span>Level</span>
-        <p>300 Level</p>
-      </div>
-
-      <div class="info-box">
-        <span>Matric Number</span>
-        <p>BU24CSC2002</p>
-      </div>
-    </div>
-
-
-
-    <footer>
-      &copy; <span id="year"></span> Akin-Alabi Moyosolaoluwa
-    </footer>
-
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    const greetingText = document.getElementById("greetingText");
-    const hour = new Date().getHours();
-
-    if (hour < 12) {
-      greetingText.textContent = "Good morning 👋 Welcome to my webpage.";
-    } else if (hour < 18) {
-      greetingText.textContent = "Good afternoon 👋 Welcome to my webpage.";
-    } else {
-      greetingText.textContent = "Good evening 👋 Welcome to my webpage.";
-    }
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>      <h1>AKIN-ALABI MOYOSOLAOLUWA</h1>
       <p>Computer Science Student | Aspiring IT Consultant</p>
+      <p class="greeting" id="greetingText"></p>
     </div>
 
     <div class="card">
@@ -241,10 +159,27 @@
     </div>
 
     <footer>
-      &copy; 2025 Akin-Alabi Moyosolaoluwa
+      &copy; <span id="year"></span> Akin-Alabi Moyosolaoluwa
     </footer>
 
   </div>
+
+  <!-- JavaScript -->
+  <script>
+    const greetingText = document.getElementById("greetingText");
+    const hour = new Date().getHours();
+
+    if (hour < 12) {
+      greetingText.textContent = "Good morning 👋 Welcome to my webpage.";
+    } else if (hour < 18) {
+      greetingText.textContent = "Good afternoon 👋 Welcome to my webpage.";
+    } else {
+      greetingText.textContent = "Good evening 👋 Welcome to my webpage.";
+    }
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
 </body>
 </html>
-
